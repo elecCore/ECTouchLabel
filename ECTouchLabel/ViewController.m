@@ -24,7 +24,7 @@
     [self.view addSubview:p_testLableView];
     testLableView = p_testLableView;
     [testLableView setBackgroundColor:[UIColor yellowColor]];
-    [testLableView setFont:[UIFont systemFontOfSize:8]];
+    [testLableView setFont:[UIFont systemFontOfSize:14]];
     [testLableView setText:@"中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试"];
     testLableView.eventTopicCheck = ^(NSString *TopicName){
         [[[UIAlertView alloc] initWithTitle:@"" message:TopicName
@@ -32,8 +32,6 @@
                           cancelButtonTitle:@"确定"
                             otherButtonTitles:nil] show];
     };
-    
-    [testLableView setText:testLableView.text];
 
     [testLableView sizeToFitWithMaxSize:CGSizeMake(testLableView.frame.size.width, MAXFLOAT)];
 }

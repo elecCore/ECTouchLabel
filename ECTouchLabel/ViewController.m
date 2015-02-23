@@ -24,7 +24,7 @@
     [self.view addSubview:p_testLableView];
     testLableView = p_testLableView;
     [testLableView setBackgroundColor:[UIColor yellowColor]];
-//    [testLableView setFont:[UIFont systemFontOfSize:14]];
+    [testLableView setFont:[UIFont systemFontOfSize:8]];
     [testLableView setText:@"中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试中文的测试#中文的测试#中文的测试"];
     testLableView.eventTopicCheck = ^(NSString *TopicName){
         [[[UIAlertView alloc] initWithTitle:@"" message:TopicName

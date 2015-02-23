@@ -64,7 +64,7 @@
 {
     [super setText:text];
     TopicArr = [self textFilterTopicArr];
-
+    
 }
 
 -(void)drawRect:(CGRect)rect
@@ -95,20 +95,11 @@
     
     CTParagraphStyleRef style = CTParagraphStyleCreate(settings, 1);
     
-    
-//    // build attributes
-//    NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithObject forKey:(id) ];
-//    
-//    // set attributes to attributed string
-////    [attributedContent addAttributes:attributes range:];
-    
     [attributedContent addAttribute:(id)kCTParagraphStyleAttributeName value:(__bridge id)style
                               range:NSMakeRange(0, [attributedContent length])];
     
     self.attributedText = attributedContent;
     
-//    [super drawRect:rect];
-   
     CGContextRef context = UIGraphicsGetCurrentContext();
     //设置context的ctm，用于适应core text的坐标体系
     CGContextSaveGState(context);
@@ -181,7 +172,7 @@
                 break;
             }
         }
-
+        
     }
     
 }
@@ -232,7 +223,7 @@
     TopicRangeArr = [self textFilterRangeArr];
     NSMutableArray *resultTopicArr = [[NSMutableArray alloc] init];
     NSString *filterText = self.text;
-
+    
     for (NSString *strRange in TopicRangeArr)
     {
         NSRange range = NSRangeFromString(strRange);

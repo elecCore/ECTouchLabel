@@ -34,6 +34,7 @@
     };
     
     NSString *test1;
+    NSString *test2;
     
     [testLableView sizeToFitWithMaxSize:CGSizeMake(testLableView.frame.size.width, MAXFLOAT)];
 }

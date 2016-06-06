@@ -32,7 +32,9 @@
                           cancelButtonTitle:@"确定"
                             otherButtonTitles:nil] show];
     };
-
+    
+    NSString *test1;
+    
     [testLableView sizeToFitWithMaxSize:CGSizeMake(testLableView.frame.size.width, MAXFLOAT)];
 }
 

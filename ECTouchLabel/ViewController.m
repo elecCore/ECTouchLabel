@@ -33,10 +33,8 @@
                             otherButtonTitles:nil] show];
     };
     
-    NSString *test1;
-    NSString *test2;
-    NSString *test3;
-
+    NSString *test4;
+    
     [testLableView sizeToFitWithMaxSize:CGSizeMake(testLableView.frame.size.width, MAXFLOAT)];
 }
 
